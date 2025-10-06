@@ -7,6 +7,8 @@ import br.com.desafio.desafio_itau.interfaceadpter.dto.request.TrasacaoDTO;
 import br.com.desafio.desafio_itau.interfaceadpter.mapper.TransacaoMapper;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
+
 @Service
 public class TrasacaoUseCase {
     private final VerificarTrasicaoGeteway verificarTrasicaoGeteway;
@@ -23,7 +25,8 @@ public class TrasacaoUseCase {
         if (transacao.getDataHora() == null) {
             throw new RuntimeException("Data não pode ser nula.");
         }
-        if (transacao.getDataHora().after(transacao.getDataHora())) {
+        if (transacao.getDataHora().after(new Date())) {
+            throw new RuntimeException("A data da transação não pode ser no futuro.");
         }
         if (transacao.getValor() == null) {
             throw new RuntimeException("Valor não pode ser nulo.");
@@ -42,6 +45,9 @@ public class TrasacaoUseCase {
     }
 
 
+    public void deletarTransacao() {
+        transacaoRepository.deletar();
+    }
 
 
 

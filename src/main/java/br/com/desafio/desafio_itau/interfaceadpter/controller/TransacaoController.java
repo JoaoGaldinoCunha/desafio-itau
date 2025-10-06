@@ -3,13 +3,10 @@ package br.com.desafio.desafio_itau.interfaceadpter.controller;
 import br.com.desafio.desafio_itau.application.usercases.TrasacaoUseCase;
 import br.com.desafio.desafio_itau.interfaceadpter.dto.request.TrasacaoDTO;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/controller/transacao")
+@RequestMapping("/transacao")
 public class TransacaoController {
     private final TrasacaoUseCase trasacaoUseCase;
 
@@ -18,6 +15,11 @@ public class TransacaoController {
     @PostMapping
     public ResponseEntity<?> salvarTransacao(TrasacaoDTO trasacaoDTO) {
         trasacaoUseCase.salvarTransacao(trasacaoDTO);
+        return ResponseEntity.status(201).build();    }
+
+    @DeleteMapping
+    public ResponseEntity<?> deletarTransacao() {
+        trasacaoUseCase.deletarTransacao();
         return ResponseEntity.ok().build();
     }
 
