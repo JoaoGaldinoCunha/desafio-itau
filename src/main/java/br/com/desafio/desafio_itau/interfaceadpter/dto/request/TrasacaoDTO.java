@@ -8,7 +8,7 @@ public class TrasacaoDTO {
 
     public TrasacaoDTO(Double valor, Date data) {
         this.valor = valor;
-        this.data = data;
+        this.date = data;
     }
 
     public Double getValor() {

@@ -2,8 +2,9 @@ package br.com.desafio.desafio_itau.domain.repository;
 
 
 import br.com.desafio.desafio_itau.domain.entity.Transacao;
+import org.springframework.stereotype.Repository;
 
-
+@Repository
 public interface TransacaoRepository {
 
     public long buscarQtdUltimos60Segundos();

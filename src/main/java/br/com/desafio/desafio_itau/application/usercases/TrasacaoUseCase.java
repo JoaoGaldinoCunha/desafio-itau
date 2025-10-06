@@ -6,7 +6,9 @@ import br.com.desafio.desafio_itau.infrastructere.gateways.VerificarTrasicaoGete
 import br.com.desafio.desafio_itau.interfaceadpter.dto.response.EstatiscasDTO;
 import br.com.desafio.desafio_itau.interfaceadpter.dto.request.TrasacaoDTO;
 import br.com.desafio.desafio_itau.interfaceadpter.mapper.TransacaoMapper;
+import org.springframework.stereotype.Service;
 
+@Service
 public class TrasacaoUseCase {
     private final VerificarTrasicaoGeteway verificarTrasicaoGeteway;
     private final TransacaoRepository transacaoRepository;

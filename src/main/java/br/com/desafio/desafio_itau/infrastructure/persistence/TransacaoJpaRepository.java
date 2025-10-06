@@ -1,4 +1,4 @@
-package br.com.desafio.desafio_itau.infrastructere.persistence;
+package br.com.desafio.desafio_itau.infrastructure.persistence;
 
 import br.com.desafio.desafio_itau.domain.entity.Transacao;
 
