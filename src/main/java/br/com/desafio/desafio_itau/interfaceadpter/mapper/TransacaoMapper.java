@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class TransacaoMapper {
 
     public Transacao trasacaoDTOToEntity(TrasacaoDTO trasacaoDTO) {
-         return new Transacao(trasacaoDTO.getValor(), trasacaoDTO.getDate());
+         return new Transacao(trasacaoDTO.getValor(), trasacaoDTO.getDataHora());
     }
 
     public TrasacaoDTO entityToDTO(Transacao transacao) {

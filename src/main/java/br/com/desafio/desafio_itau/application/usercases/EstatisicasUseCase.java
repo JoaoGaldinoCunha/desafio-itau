@@ -25,11 +25,11 @@ public class EstatisicasUseCase {
         double maximo = transacaoRepository.buscarMaximoUltimos60Segundos();
 
         EstatiscasDTO estatiscasDTO = new EstatiscasDTO();
-        estatiscasDTO.setQuantidade(qtd);
-        estatiscasDTO.setValorTotal(total);
-        estatiscasDTO.setMedia(media);
-        estatiscasDTO.setMinimo(minimo);
-        estatiscasDTO.setMaximo(maximo);
+        estatiscasDTO.setCount(qtd);
+        estatiscasDTO.setSum(total);
+        estatiscasDTO.setAvg(media);
+        estatiscasDTO.setMin(minimo);
+        estatiscasDTO.setMax(maximo);
 
         return estatiscasDTO;
     }

@@ -17,4 +17,6 @@ public interface TransacaoRepository {
     public double buscarMaximoUltimos60Segundos();
 
     public void salvar(Transacao transacao);
+
+    public void deletar();
 }

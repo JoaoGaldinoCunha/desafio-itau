@@ -4,11 +4,11 @@ import java.util.Date;
 
 public class TrasacaoDTO {
     private Double valor;
-    private Date date;
+    private Date dataHora;
 
-    public TrasacaoDTO(Double valor, Date data) {
+    public TrasacaoDTO(Double valor, Date dataHora) {
         this.valor = valor;
-        this.date = data;
+        this.dataHora = dataHora;
     }
 
     public Double getValor() {
@@ -19,11 +19,11 @@ public class TrasacaoDTO {
         this.valor = valor;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getDataHora() {
+        return dataHora;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setDataHora(Date dataHora) {
+        this.dataHora = dataHora;
     }
 }

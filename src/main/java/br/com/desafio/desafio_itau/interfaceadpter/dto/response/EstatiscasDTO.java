@@ -1,31 +1,49 @@
 package br.com.desafio.desafio_itau.interfaceadpter.dto.response;
 
 public class EstatiscasDTO {
-    public long quantidade;
-    public double valorTotal;
-    public double media;
-    public double minimo;
-    public double maximo;
+    private long count;
+    private double sum;
+    private double avg;
+    private double min;
+    private double max;
 
-    public long getQuantidade() {return quantidade;}
+    public long getCount() {
+        return count;
+    }
 
-    public void setQuantidade(long quantidade) {this.quantidade = quantidade;}
+    public void setCount(long count) {
+        this.count = count;
+    }
 
-    public double getValorTotal() {return valorTotal;}
+    public double getSum() {
+        return sum;
+    }
 
-    public void setValorTotal(double valorTotal) {this.valorTotal = valorTotal;}
+    public void setSum(double sum) {
+        this.sum = sum;
+    }
 
-    public double getMedia() {return media;}
+    public double getAvg() {
+        return avg;
+    }
 
-    public void setMedia(double media) {this.media = media;}
+    public void setAvg(double avg) {
+        this.avg = avg;
+    }
 
-    public double getMinimo() {return minimo;}
+    public double getMin() {
+        return min;
+    }
 
-    public void setMinimo(double minimo) {this.minimo = minimo;}
+    public void setMin(double min) {
+        this.min = min;
+    }
 
-    public double getMaximo() {return maximo;}
+    public double getMax() {
+        return max;
+    }
 
-    public void setMaximo(double maximo) {this.maximo = maximo;}
-
-
+    public void setMax(double max) {
+        this.max = max;
+    }
 }

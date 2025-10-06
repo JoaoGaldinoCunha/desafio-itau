@@ -21,9 +21,5 @@ public class TransacaoController {
         return ResponseEntity.ok().build();
     }
 
-    @GetMapping
-    public ResponseEntity<?> trazerEstatiscas(){
-        return ResponseEntity.ok(trasacaoUseCase.buscarEstaticas());
-    }
 
 }
