@@ -2,7 +2,7 @@ package br.com.desafio.desafio_itau.application.usercases;
 
 import br.com.desafio.desafio_itau.domain.entity.Transacao;
 import br.com.desafio.desafio_itau.domain.repository.TransacaoRepository;
-import br.com.desafio.desafio_itau.infrastructere.gateways.VerificarTrasicaoGeteway;
+import br.com.desafio.desafio_itau.infrastructure.gateways.VerificarTrasicaoGeteway;
 import br.com.desafio.desafio_itau.interfaceadpter.dto.response.EstatiscasDTO;
 import br.com.desafio.desafio_itau.interfaceadpter.dto.request.TrasacaoDTO;
 import br.com.desafio.desafio_itau.interfaceadpter.mapper.TransacaoMapper;

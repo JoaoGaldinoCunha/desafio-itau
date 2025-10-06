@@ -2,9 +2,12 @@ package br.com.desafio.desafio_itau.infrastructure.persistence;
 
 import br.com.desafio.desafio_itau.domain.entity.Transacao;
 import br.com.desafio.desafio_itau.domain.repository.TransacaoRepository;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.Date;
 
+@Component
 public class TransacaoRepositoryImpl implements TransacaoRepository {
 
     private final TransacaoJpaRepository transacaoJpaRepository;

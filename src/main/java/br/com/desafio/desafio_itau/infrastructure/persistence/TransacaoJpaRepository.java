@@ -1,13 +1,16 @@
 package br.com.desafio.desafio_itau.infrastructure.persistence;
 
 import br.com.desafio.desafio_itau.domain.entity.Transacao;
+import org.springframework.stereotype.Repository;
 
+import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class TransacaoJpaRepository {
-    private  final List<Transacao> transacoes;
+    private final List<Transacao> transacoes = new ArrayList<>();
 
-    public TransacaoJpaRepository(List<Transacao> transacoes) {this.transacoes = transacoes;}
-
-    public List<Transacao> getTransacoes() {return transacoes;}
+    public List<Transacao> getTransacoes() {
+        return transacoes;
+    }
 }

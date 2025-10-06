@@ -2,7 +2,9 @@ package br.com.desafio.desafio_itau.interfaceadpter.mapper;
 
 import br.com.desafio.desafio_itau.domain.entity.Transacao;
 import br.com.desafio.desafio_itau.interfaceadpter.dto.request.TrasacaoDTO;
+import org.springframework.stereotype.Component;
 
+@Component
 public class TransacaoMapper {
 
     public Transacao trasacaoDTOToEntity(TrasacaoDTO trasacaoDTO) {
